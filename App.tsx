@@ -8,7 +8,7 @@ const App  = () : React.JSX.Element =>{
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="intro2">
-      <Stack.Screen name={"intro"} component={IntroPage}/>
+      <Stack.Screen name={"intro"} component={IntroPage} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
