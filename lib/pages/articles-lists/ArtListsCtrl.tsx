@@ -4,9 +4,11 @@ import { ArtListsEvents } from "./ArtListsEvents";
 
 
 const ArtListsCtrl = ()=>{
-    const [] = useState<ArtListStates>(
-
-    )
+    const [pageState, setPagestate] = useState<ArtListStates>({
+        listDesArticles:[],
+        listCategorie:[],
+        categorieSelectionne : null 
+    })
 };
 const eventsHandler = (action : ArtListsEvents)=>{
     switch(action){
